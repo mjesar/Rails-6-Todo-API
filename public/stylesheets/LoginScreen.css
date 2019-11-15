@@ -1,0 +1,81 @@
+body{
+  background-color: #f8f8f8;
+}
+.field{
+  width:100%;
+}
+.actions{
+  margin-top: 10px !important;
+}
+.input-field{
+    width: 100% !important;
+    padding: 2% !important;
+    border-radius: 6px !important;
+    border:1px solid;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+.form-label{
+  font-size: 24px;
+  font-family: 'roboto'
+ margin-bottom: 10px !important;
+}
+
+  .login-form {
+    margin-top: 10%;
+    width: 25%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 11px;
+
+  }
+.form-label-remember{
+    font-size: 16px;
+    float: right;
+}
+
+  .login-header {
+    height: 60px !important;
+    line-height: 64px !important;
+    color: #4e96bb !important;
+    font-weight: 600 !important;
+    font-size: 50px !important;
+    margin-left: 30%;
+
+}
+  .forget-password-header{
+    height: 30px !important;
+    line-height: 32px !important;
+    color: #4e96bb !important;
+    font-weight: 300 !important;
+    font-size: 25px !important;
+    margin-left: 15%;
+}
+
+.login-form-forgot {
+  float: right !important;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.login-btn{
+  width: 100% !important;
+    height: 35px;
+    background-color: #4e96bb;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.login-error {
+  color: red !important;
+  margin-left: auto;
+  margin-right: auto;
+}
