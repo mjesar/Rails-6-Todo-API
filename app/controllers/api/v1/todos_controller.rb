@@ -9,6 +9,16 @@ class Api::V1::TodosController < ApiController
     render :show
   end
 
+  def create
+    @todo = current_user.todos.new(todo_params)
+
+    if @todo.save
+      render :show, status: :created
+    else
+      render json: @todo.errors, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def set_todo
