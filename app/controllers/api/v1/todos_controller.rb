@@ -1,5 +1,5 @@
 class Api::V1::TodosController < ApiController
-  before_action :set_todo, only: %i[show update]
+  before_action :set_todo, only: %i[show update destroy]
 
   def index
     @todos = current_user.todos.all.order(created_at: :desc).page(params[:page])
@@ -25,6 +25,11 @@ class Api::V1::TodosController < ApiController
     else
       render json: @todo.errors, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @todo.destroy
+    render json: { 'deleted': @todo.id }
   end
 
   private
