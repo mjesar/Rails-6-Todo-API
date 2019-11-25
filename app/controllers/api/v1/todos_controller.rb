@@ -1,5 +1,5 @@
 class Api::V1::TodosController < ApiController
   def index
-    render json: {"Hello": "Ji"}
+    @todos = current_user.todos.all
   end
 end
