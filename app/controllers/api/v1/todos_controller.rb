@@ -14,4 +14,8 @@ class Api::V1::TodosController < ApiController
   def set_todo
     @todo = current_user.todos.find(params[:id])
   end
+
+  def todo_params
+    params.require(:todo).permit(:title, :description, :status)
+  end
 end
