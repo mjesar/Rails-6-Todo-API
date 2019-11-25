@@ -3,8 +3,7 @@ class HomeController < ApplicationController
 
   def index
     set_access_token_in_cookies
-      # redirect_to ''
-      render json: {"Hello": "Ji"}
+    redirect_to 'http://localhost:3000/api/v1/todos'
   end
 
   private
