@@ -1,5 +1,5 @@
 class Api::V1::TodosController < ApiController
-  before_action :set_todo, only: %i[show]
+  before_action :set_todo, only: %i[show update]
 
   def index
     @todos = current_user.todos.all.order(created_at: :desc).page(params[:page])
@@ -14,6 +14,14 @@ class Api::V1::TodosController < ApiController
 
     if @todo.save
       render :show, status: :created
+    else
+      render json: @todo.errors, status: :unprocessable_entity
+    end
+  end
+
+  def update
+    if @todo.update(todo_params)
+      render :show
     else
       render json: @todo.errors, status: :unprocessable_entity
     end
