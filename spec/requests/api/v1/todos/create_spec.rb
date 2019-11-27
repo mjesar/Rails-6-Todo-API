@@ -6,7 +6,7 @@ RSpec.describe 'GET /api/v1/todos', type: :request do
   let(:user) { create(:user) }
   let(:user_token) { user.authentication_token }
   let(:user_email) { user.email }
- 
+
   let(:params) do
     {
       todo: {
