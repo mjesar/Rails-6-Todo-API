@@ -29,7 +29,7 @@ class Api::V1::TodosController < ApiController
 
   def destroy
     @todo.destroy
-    render json: { 'deleted': @todo.id }
+    render json: { 'deleted': @todo.id }, status: :no_content
   end
 
   private
