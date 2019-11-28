@@ -38,5 +38,6 @@ module Rails6TodoUiApi
     config.middleware.use ActionDispatch::Flash
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
+    config.middleware.use OliveBranch::Middleware, inflection: 'camel'
   end
 end
