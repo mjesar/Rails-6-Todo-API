@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'GET /api/v1/todos/todo_id', type: :request do
+RSpec.describe 'PUT /api/v1/todos/todo_id', type: :request do
   let(:url) { "/api/v1/todos/#{todo.id}" }
   let(:headers) { { 'X-USER-TOKEN' => user_token, 'X-USER-EMAIL' => user_email } }
   let(:user) { create(:user) }
