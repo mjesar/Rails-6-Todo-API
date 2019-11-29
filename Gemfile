@@ -16,6 +16,7 @@ gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 gem 'jbuilder', '~> 2.7'
 gem 'kaminari'
 gem "olive_branch"
+gem "rack-cors"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
