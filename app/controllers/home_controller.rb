@@ -3,7 +3,7 @@ class HomeController < ApplicationController
 
   def index
     set_access_token_in_cookies
-    redirect_to 'http://localhost:3000/api/v1/todos'
+    redirect_to 'http://localhost:3001'
   end
 
   private
