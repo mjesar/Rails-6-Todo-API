@@ -1,24 +1,51 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Initial directory setup
 
-Things you may want to cover:
+1. Create directory called **todo**
 
-* Ruby version
+```
+mkdir todo
+```
 
-* System dependencies
+2. Clone rails backend project inside todo directory
 
-* Configuration
 
-* Database creation
+```
+https://github.com/mjesar/Rails-6-Todo-API
+```
 
-* Database initialization
+3. Clone react todo web app in same directory
 
-* How to run the test suite
+```
+https://github.com/mjesar/Todo-React-webapp
+```
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+## Running projects
+
+Now assuming you are in **todo-lab** directory
+
+1. Install gems in backend
+
+```
+bundle install
+```
+
+2. setup database 
+
+```
+rails db:migrate 
+```
+
+3. Run backend
+
+```
+rails s
+```
+
+4. Now open local app (http://localhost:3000) for backend
+
+    and for frontend (http://localhost:3001)
+
+
