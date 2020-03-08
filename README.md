@@ -1,4 +1,3 @@
-
 ## Initial directory setup
 
 1. Create directory called **todo**
@@ -8,7 +7,6 @@ mkdir todo
 ```
 
 2. Clone rails backend project inside todo directory
-
 
 ```
 https://github.com/mjesar/Rails-6-Todo-API
@@ -20,8 +18,6 @@ https://github.com/mjesar/Rails-6-Todo-API
 https://github.com/mjesar/Todo-React-webapp
 ```
 
-
-
 ## Running projects
 
 Now assuming you are in **todo-lab** directory
@@ -32,10 +28,10 @@ Now assuming you are in **todo-lab** directory
 bundle install
 ```
 
-2. setup database 
+2. setup database
 
 ```
-rails db:migrate 
+rails db:migrate
 ```
 
 3. Run backend
@@ -46,6 +42,10 @@ rails s
 
 4. Now open local app (http://localhost:3000) for backend
 
-    and for frontend (http://localhost:3001)
+   and for frontend (http://localhost:3001)
 
+5. To run all rspec tests
 
+```
+bundle exec rspec .
+```
